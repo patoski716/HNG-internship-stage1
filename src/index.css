@@ -1,13 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  /* background: black !important; */
+}
+.point:hover{
+  cursor: pointer;
+}
+.circle-image{
+  display: inline-block;
+  width: 33%;
+  padding-bottom: 33%;
+  height: 0;
+  position: relative;
+}
+.circle-image img{
+width:100%;
+height:100%;
+position: absolute;
+clip-path: circle(50%);
+object-fit: cover;
+}
+.box {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px dashed #D1D5DB;
+  box-shadow: 0 0 0 4px white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.image{
+  margin-left: 50px !important;
+}
+
+@media (max-width : 768px){
+  .port2{
+    text-align: center;
+  }
+  .port{
+    padding: 0 0 50px 50px;
+  }
+  .image{
+    margin-left: 40px !important;
+  }
+ 
+  .send{
+    display:none;
+  }
+
+  .boxes {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px dashed #D1D5DB;
+    box-shadow: 0 0 0 4px white;
+  }
+.dot,.boxes{
+float: right; 
+margin-right: 10px;
+background: url(../src/images/dot.svg) no-repeat center;
+background-size: cover;
+position: relative;
+}
+  
+  }
+  @media(max-width : 420px){
+    .port2{
+      margin-right: 0 !important;
+    }
+    .port{
+      padding: 0 0 50px 50px;
+    }
+    .boxes {
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border-radius: 50%;
+      border: 2px dashed #D1D5DB;
+      box-shadow: 0 0 0 4px white;
+    }
+  .dot,.boxes{
+  float: right; 
+  margin-right: 10px;
+  background: url(../src/images/dot.svg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  }
+    .send{
+      display:none;
+    }
+}
+@media (min-width:360px) and (max-width:368px){
+  .image{
+    margin-left: 10px !important;
+  }
+  .port{
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
+  .send{
+    display:none;
+  }
+  .boxes {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px dashed #D1D5DB;
+    box-shadow: 0 0 0 4px white;
+  }
+.dot,.boxes{
+float: right; 
+margin-right: 10px;
+background: url(../src/images/dot.svg) no-repeat center;
+background-size: cover;
+position: relative;
+}
+ 
 }
