@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="showcase.PNG" alt="showcase" width="800px"/>
+<img src="showcase.JPG" alt="showcase" width="800px"/>
 
 
   <h3 align="center">HNG INTERNSHIP</h3>
