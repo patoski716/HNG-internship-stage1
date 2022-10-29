@@ -1,6 +1,6 @@
 import React from 'react'
 import Send from '../images/send.svg'
-import Profile from '../images/profile.jpg'
+import Profile from '../images/profile__img.png'
 
 
 
@@ -22,7 +22,7 @@ const Head = () => {
                 </div>            
                 
                 <div className="text-black text-center">
-                <p style={{fontWeight:'bolder'}}>Patrick Chukwudifu</p>
+                <p style={{fontWeight:'bolder'}}>ADEYEMO FORTUNATUS</p>
                 <p id="slack" hidden> patoski</p>
                 </div>
             </div>
