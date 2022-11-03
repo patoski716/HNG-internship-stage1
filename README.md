@@ -13,6 +13,8 @@
     frontend task stage 1 👇
     
 </p>
+</div>
+<div align="center">
 
     <img src="task.JPG" alt="task" width="800px">
 </div>
@@ -33,10 +35,12 @@
     frontend task stage 2 👇
   </p>
 
+</div>
+<div align="center">
   
     <img src="task2.png" alt="task">
+  </div>
 
     
-</div>
 
 
