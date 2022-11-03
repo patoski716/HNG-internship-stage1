@@ -1,25 +1,21 @@
-# Stage1
-
 <div align="center">
 
 <img src="showcase.JPG" alt="showcase" width="800px"/>
-
-
 
 
   <h3 align="center">HNG INTERNSHIP</h3>
 
   <p align="center">
     frontend task stage 1 👇
-    
 </p>
+  
 </div>
+
+### Task
 <div align="center">
-
-    <img src="task.JPG" alt="task" width="800px">
+    <img src="task.JPG" alt="task">
 </div>
 
-### Stage2
 
 
 <div align="center">
@@ -33,14 +29,10 @@
 
   <p align="center">
     frontend task stage 2 👇
-  </p>
-
+</p>
 </div>
+
+### Task2
 <div align="center">
-  
     <img src="task2.png" alt="task">
-  </div>
-
-    
-
-
+</div>
