@@ -25,7 +25,7 @@ const Contact = () => {
                 <input type="email" id='email' className="form-control" placeholder="yourname@email.com" required="required"/>
 
                 <label htmlFor="message" id='message' style={{fontWeight:'bold'}}>Message</label>
-                <textarea className="form-control" rows="5" placeholder="send me a messageand i'll reply you as soon as possible" required="required"/>
+                <textarea className="form-control" rows="5" placeholder="send me a message and i'll reply you as soon as possible" required="required"/>
                 
                 <input type="checkbox" className='mt-3 mx-2'/> You agree to providing your data to <span>{"{"}</span>name<span>{"}"}</span> who may contact you  
                 </div>
