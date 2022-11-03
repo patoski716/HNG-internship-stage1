@@ -1,3 +1,8 @@
+### Task 1
+<div align="center">
+    <img src="task.JPG" alt="task">
+</div>
+
 <div align="center">
 
 <img src="showcase.JPG" alt="showcase" width="800px"/>
@@ -11,12 +16,12 @@
   
 </div>
 
-### Task
+
+
+### Task2
 <div align="center">
-    <img src="task.JPG" alt="task">
+    <img src="task2.png" alt="task">
 </div>
-
-
 
 <div align="center">
 
@@ -32,7 +37,4 @@
 </p>
 </div>
 
-### Task2
-<div align="center">
-    <img src="task2.png" alt="task">
-</div>
+
