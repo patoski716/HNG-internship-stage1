@@ -85,7 +85,7 @@ const Contact = () => {
                 )}
 
                 <label htmlFor="message" id='message' style={{fontWeight:'bold'}}>Message</label>
-                <textarea className="form-control" rows="5" placeholder="send me a message and i'll reply you as soon as possible" required="required" value={post?.message} onChange={(e) => { setFormDoc({ ...post, 'message': e.target.value}) }}/>
+                <textarea  className="form-control" rows="5" placeholder="send me a message and i'll reply you as soon as possible" required="required" value={post?.message} onChange={(e) => { setFormDoc({ ...post, 'message': e.target.value}) }}/>
                 {errorMessage && (
                   <p className="text-danger"> {errorMessage} </p>
                 )}
