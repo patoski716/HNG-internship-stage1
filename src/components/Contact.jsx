@@ -30,23 +30,23 @@ const Contact = () => {
         if(postFirstName === '' || postFirstName === undefined ){
           postFirstName = String(postFirstName).trim()
           
-          setErrorFirstname('Fist name cannot be empty.');
+          setErrorFirstname('Plese enter your fist name.');
           return 
         }
         if(postLastName === '' || postLastName === undefined ){
           postLastName = String(postLastName).trim()
-          setErrorLastname('Last name cannot be empty.');
+          setErrorLastname('Plese enter your last name.');
           return 
         }
         
         if( postEmail === '' || postEmail === undefined ){
             postEmail = String(postEmail).trim()
-            setErrorEmail('email cannot be empty.');
+            setErrorEmail('Plese enter your email.');
             return
         }
         if( postMessage === '' || postMessage === undefined ){
           postMessage = String(postMessage).trim()
-          setErrorMessage('Message cannot be empty.');
+          setErrorMessage('Plese enter a message.');
           return
       }
       alert('Thank you for contacting me i will get back to you shortly')
