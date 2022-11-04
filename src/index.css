@@ -35,6 +35,14 @@ object-fit: cover;
 .image{
   margin-left: 50px !important;
 }
+@media(min-width : 769px) and (max-width:2000px){
+  .smallscreen{
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+
 
 @media (max-width : 768px){
   .port2{
@@ -66,7 +74,14 @@ background: url(../src/images/dot.svg) no-repeat center;
 background-size: cover;
 position: relative;
 }
-  
+.bigscreen{
+  display: none !important;
+  visibility: visible;
+}
+.smallscreen{
+  /* display: contents; */
+  visibility: visible;
+}
   }
   @media(max-width : 420px){
     .port2{
@@ -90,9 +105,12 @@ position: relative;
   background-size: cover;
   position: relative;
   }
-    .send{
-      display:none;
-    }
+  .send{
+    display:none;
+  }
+  .bigscreen{
+    display: none !important;
+  }
 }
 @media (min-width:360px) and (max-width:368px){
   .image{
@@ -120,6 +138,8 @@ background: url(../src/images/dot.svg) no-repeat center;
 background-size: cover;
 position: relative;
 }
-
+.bigscreen{
+  display: none !important;
+}
  
 }
