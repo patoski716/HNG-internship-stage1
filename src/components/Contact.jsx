@@ -64,27 +64,27 @@ const Contact = () => {
             <form>
               <div className="row">
                 <div className="col-md-6">
-                <label htmlFor="firstname">First name</label>
+                <label htmlFor="firstname" className="font-weight-bold">First name</label>
                 <input type="text" id='first_name' className="form-control rounded" placeholder="Enter your first name" required="required" value={post?.first_name} onChange={(e) => { setFormDoc({ ...post, 'first_name': e.target.value}) }} />
                 {errorFirstname && (
                   <p className="text-danger"> {errorFirstname} </p>
                 )}
                 </div>
                 <div className="col-md-6">
-                <label htmlFor="lastname">Last name</label>
+                <label htmlFor="lastname" className="font-weight-bold">Last name</label>
                 <input type="text" id='last_name' className="form-control rounded" placeholder="Enter your last name" required="required" value={post?.last_name} onChange={(e) => { setFormDoc({ ...post, 'last_name': e.target.value}) }} />
                 {errorLastname && (
                   <p className="text-danger"> {errorLastname} </p>
                 )}
                 </div>
-                <div className="col-md-12">
+                <div className="col-md-12" className="font-weight-bold">
                 <label htmlFor="email">Email</label>
                 <input type="email" id='email' className="form-control rounded" placeholder="yourname@email.com" required="required" value={post?.email} onChange={(e) => { setFormDoc({ ...post, 'email': e.target.value}) }}/>
                 {errorEmail && (
                   <p className="text-danger"> {errorEmail} </p>
                 )}
 
-                <label htmlFor="message" id='message'>Message</label>
+                <label htmlFor="message" id='message' className="font-weight-bold">Message</label>
                 <textarea  className="form-control rounded" rows="5" placeholder="send me a message and i'll reply you as soon as possible" required="required" value={post?.message} onChange={(e) => { setFormDoc({ ...post, 'message': e.target.value}) }}/>
                 {errorMessage && (
                   <p className="text-danger"> {errorMessage} </p>
