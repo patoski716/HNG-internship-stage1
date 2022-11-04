@@ -3,7 +3,7 @@ import Footer from './Footer'
 
 
 const Contact = () => {
-  const name = "patrick chukwudifu"
+  const name = "patoski"
   return (
     <div className="container">
       <section id="register" className=" mt-5 py-5 mb-5 pb-5">
