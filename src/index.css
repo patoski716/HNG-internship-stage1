@@ -4,6 +4,7 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   /* background: black !important; */
+  color: #000 !important;
 }
 .point:hover{
   cursor: pointer;
@@ -119,5 +120,6 @@ background: url(../src/images/dot.svg) no-repeat center;
 background-size: cover;
 position: relative;
 }
+
  
 }
