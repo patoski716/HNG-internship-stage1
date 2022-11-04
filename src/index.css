@@ -4,7 +4,7 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   /* background: black !important; */
-  color: #000 !important;
+
 }
 .point:hover{
   cursor: pointer;
