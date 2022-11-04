@@ -9,7 +9,7 @@ const Error = () => {
     useEffect(() => {
         setTimeout(() => {
           navigate('/')
-        }, 3000)
+        }, 5000)
       }, [])
   return (
     <div className='container'>
