@@ -37,6 +37,15 @@ textarea:invalid
 {
   border: 2px solid #f89687;
 }
+input{
+  border-radius: 8px !important;
+}
+textarea{
+  border-radius: 8px !important;
+}
+button{
+  border-radius: 8px !important;
+}
 @media(min-width : 769px) and (max-width:2000px){
   .smallscreen{
     display: none !important;

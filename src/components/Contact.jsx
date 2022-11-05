@@ -72,20 +72,20 @@ const Contact = () => {
                 </div>
                 <div className="col-md-6">
                 <label htmlFor="lastname" className="font-weight-bold">Last name</label>
-                <input type="text" id='last_name' className="form-control rounded" placeholder="Enter your last name" required="required" value={post?.last_name} onChange={(e) => { setFormDoc({ ...post, 'last_name': e.target.value}) }} />
+                <input type="text" id="last_name" className="form-control rounded" placeholder="Enter your last name" required="required" value={post?.last_name} onChange={(e) => { setFormDoc({ ...post, 'last_name': e.target.value}) }} />
                 {errorLastname && (
                   <p className="text-danger"> {errorLastname} </p>
                 )}
                 </div>
                 <div className="col-md-12">
                 <label htmlFor="email" className="font-weight-bold">Email</label>
-                <input type="email" id='email' className="form-control rounded" placeholder="yourname@email.com" required="required" value={post?.email} onChange={(e) => { setFormDoc({ ...post, 'email': e.target.value}) }}/>
+                <input type="email" id="email" className="form-control rounded" placeholder="yourname@email.com" required="required" value={post?.email} onChange={(e) => { setFormDoc({ ...post, 'email': e.target.value}) }}/>
                 {errorEmail && (
                   <p className="text-danger"> {errorEmail} </p>
                 )}
 
-                <label htmlFor="message" id='message' className="font-weight-bold">Message</label>
-                <textarea  className="form-control rounded" rows="5" placeholder="send me a message and i'll reply you as soon as possible" required="required" value={post?.message} onChange={(e) => { setFormDoc({ ...post, 'message': e.target.value}) }}/>
+                <label htmlFor="message"  className="font-weight-bold">Message</label>
+                <textarea  className="form-control rounded" rows="5"id="message" placeholder="send me a message and i'll reply you as soon as possible" required="required" value={post?.message} onChange={(e) => { setFormDoc({ ...post, 'message': e.target.value}) }}/>
                 {errorMessage && (
                   <p className="text-danger"> {errorMessage} </p>
                 )}
@@ -93,7 +93,7 @@ const Contact = () => {
                 <input type="checkbox" className='mt-3 mx-2'/> You agree to providing your data to {name} who may contact you  
                 </div>
                 <div className="col-md-12">
-                <button id='btn__submit' onClick={handleSubmit} className="btn btn-primary mt-4 rounded" style={{height:'40px',width:'100%',textDecoration:'none',color:'white',border:'#EAECF0',justifyContent:'center'}}>Send message</button>
+                <button id="btn__submit" onClick={handleSubmit} className="btn btn-primary mt-4 rounded" style={{height:'40px',width:'100%',textDecoration:'none',color:'white',border:'#EAECF0',justifyContent:'center'}}>Send message</button>
                 </div>
               </div>
 
