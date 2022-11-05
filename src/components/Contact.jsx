@@ -25,7 +25,11 @@ const Contact = () => {
         let postEmail = post?.email
         let postMessage = post?.message
 
-
+        if( postMessage === '' || postMessage === undefined ){
+          postMessage = String(postMessage).trim()
+          setErrorMessage('Plese enter a message.');
+          return
+      }
     
         if(postFirstName === '' || postFirstName === undefined ){
           postFirstName = String(postFirstName).trim()
@@ -44,48 +48,44 @@ const Contact = () => {
             setErrorEmail('Plese enter your email.');
             return
         }
-        if( postMessage === '' || postMessage === undefined ){
-          postMessage = String(postMessage).trim()
-          setErrorMessage('Plese enter a message.');
-          return
-      }
+        
       alert('Thank you for contacting me i will get back to you shortly')
       navigate('/');
     }
 
   return (
     <div className="container">
-      <section className=" mt-5 py-5 mb-5 pb-5">
+      <section className=" mt-3 py-5 mb-5 pb-5">
         
           <div className="row">
             <div className="col-md-6 mx-auto">
-            <h3 className="text-black" style={{fontWeight:'bolder',fontSize:'2rem'}}>Contact Me</h3>
+            <h1 className="text-black" style={{fontWeight:'bold',fontSize:'3rem'}}>Contact Me</h1>
             <p>Hi there, contact me to ask me about anything you have in your mind. </p>
             <form className="mt-5">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-6 mb-4">
                 <label htmlFor="firstname" className="font-weight-bold ">First name</label>
                 <input type="text" id='first_name' className="form-control rounded" placeholder="Enter your first name" required="required" value={post?.first_name} onChange={(e) => { setFormDoc({ ...post, 'first_name': e.target.value}) }} />
                 {errorFirstname && (
                   <p className="text-danger"> {errorFirstname} </p>
                 )}
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 mb-4">
                 <label htmlFor="lastname" className="font-weight-bold">Last name</label>
                 <input type="text" id="last_name" className="form-control rounded" placeholder="Enter your last name" required="required" value={post?.last_name} onChange={(e) => { setFormDoc({ ...post, 'last_name': e.target.value}) }} />
                 {errorLastname && (
                   <p className="text-danger"> {errorLastname} </p>
                 )}
                 </div>
-                <div className="col-md-12">
+                <div className="col-md-12 mb-4">
                 <label htmlFor="email" className="font-weight-bold">Email</label>
-                <input type="email" id="email" className="form-control rounded" placeholder="yourname@email.com" required="required" value={post?.email} onChange={(e) => { setFormDoc({ ...post, 'email': e.target.value}) }}/>
+                <input type="email" id="email" className="form-control rounded mb-4" placeholder="yourname@email.com" required="required" value={post?.email} onChange={(e) => { setFormDoc({ ...post, 'email': e.target.value}) }}/>
                 {errorEmail && (
                   <p className="text-danger"> {errorEmail} </p>
                 )}
 
                 <label htmlFor="message"  className="font-weight-bold">Message</label>
-                <textarea  className="form-control rounded" rows="5"id="message" placeholder="send me a message and i'll reply you as soon as possible" required="required" value={post?.message} onChange={(e) => { setFormDoc({ ...post, 'message': e.target.value}) }}/>
+                <textarea  className="form-control rounded mb-4" rows="5"id="message" placeholder="send me a message and i'll reply you as soon as possible" required="required" value={post?.message} onChange={(e) => { setFormDoc({ ...post, 'message': e.target.value}) }}/>
                 {errorMessage && (
                   <p className="text-danger"> {errorMessage} </p>
                 )}

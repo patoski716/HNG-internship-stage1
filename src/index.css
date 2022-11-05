@@ -35,7 +35,7 @@ object-fit: cover;
 }
 textarea:invalid
 {
-  border: 2px solid #f89687;
+  border: 1px solid #f89687;
 }
 input{
   border-radius: 8px !important;
