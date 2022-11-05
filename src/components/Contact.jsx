@@ -25,11 +25,7 @@ const Contact = () => {
         let postEmail = post?.email
         let postMessage = post?.message
 
-        if( postMessage === '' || postMessage === undefined ){
-          postMessage = String(postMessage).trim()
-          setErrorMessage('Plese enter a message.');
-          return
-      }
+        
     
         if(postFirstName === '' || postFirstName === undefined ){
           postFirstName = String(postFirstName).trim()
@@ -48,6 +44,11 @@ const Contact = () => {
             setErrorEmail('Plese enter your email.');
             return
         }
+        if( postMessage === '' || postMessage === undefined ){
+          postMessage = String(postMessage).trim()
+          setErrorMessage('Plese enter a message.');
+          return
+      }
         
       alert('Thank you for contacting me i will get back to you shortly')
       navigate('/');
@@ -90,7 +91,7 @@ const Contact = () => {
                   <p className="text-danger"> {errorMessage} </p>
                 )}
                 
-                <input type="checkbox" className="mt-3 mx-2 rounded"/> You agree to providing your data to {name} who may contact you  
+                <input type="checkbox" className="mt-3 mx-2 rounded check"/> You agree to providing your data to {name} who may contact you  
                 </div>
                 <div className="col-md-12">
                 <button id="btn__submit" onClick={handleSubmit} className="btn btn-primary mt-4 rounded" style={{height:'40px',width:'100%',textDecoration:'none',color:'white',border:'#EAECF0',justifyContent:'center'}}>Send message</button>
