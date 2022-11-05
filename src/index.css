@@ -33,10 +33,10 @@ object-fit: cover;
 .image{
   margin-left: 50px !important;
 }
-textarea:invalid
+/* textarea:invalid
 {
   border: 1px solid #f89687;
-}
+} */
 input{
   border-radius: 8px !important;
 }
