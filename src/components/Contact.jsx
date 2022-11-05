@@ -59,7 +59,7 @@ const Contact = () => {
         
           <div className="row">
             <div className="col-md-6 mx-auto">
-            <h3 className="text-black" style={{fontWeight:'bolder',fontSize:'2rem'}}>Contact Me</h3>
+            <h3 className="text-black" style={{fontWeight:'bolder'}}>Contact Me</h3>
             <p>Hi there, contact me to ask me about anything you have in your mind. </p>
             <form>
               <div className="row">
