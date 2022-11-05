@@ -59,7 +59,7 @@ const Contact = () => {
         
           <div className="row">
             <div className="col-md-6 mx-auto">
-            <h3 className="text-black" style={{fontWeight:'bolder'}}>Contact Me</h3>
+            <h3 className="text-black" style={{fontWeight:'bolder',fontSize:'3rem'}}>Contact Me</h3>
             <p>Hi there, contact me to ask me about anything you have in your mind. </p>
             <form>
               <div className="row">
@@ -77,8 +77,8 @@ const Contact = () => {
                   <p className="text-danger"> {errorLastname} </p>
                 )}
                 </div>
-                <div className="col-md-12" className="font-weight-bold">
-                <label htmlFor="email">Email</label>
+                <div className="col-md-12">
+                <label htmlFor="email" className="font-weight-bold">Email</label>
                 <input type="email" id='email' className="form-control rounded" placeholder="yourname@email.com" required="required" value={post?.email} onChange={(e) => { setFormDoc({ ...post, 'email': e.target.value}) }}/>
                 {errorEmail && (
                   <p className="text-danger"> {errorEmail} </p>
