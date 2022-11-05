@@ -61,10 +61,10 @@ const Contact = () => {
             <div className="col-md-6 mx-auto">
             <h3 className="text-black" style={{fontWeight:'bolder',fontSize:'2rem'}}>Contact Me</h3>
             <p>Hi there, contact me to ask me about anything you have in your mind. </p>
-            <form>
+            <form className="mt-5">
               <div className="row">
                 <div className="col-md-6">
-                <label htmlFor="firstname" className="font-weight-bold">First name</label>
+                <label htmlFor="firstname" className="font-weight-bold ">First name</label>
                 <input type="text" id='first_name' className="form-control rounded" placeholder="Enter your first name" required="required" value={post?.first_name} onChange={(e) => { setFormDoc({ ...post, 'first_name': e.target.value}) }} />
                 {errorFirstname && (
                   <p className="text-danger"> {errorFirstname} </p>
